@@ -135,9 +135,7 @@ https://templatemo.com/tm-591-villa-agency
               <li>Tanggal: <span>{{ $gmbr->release_date }}</span></li>
               <li>Deskripsi: <span>{{ $gmbr->deskripsi }}</span></li>
             </ul>
-            <div class="main-button">
-              <a href="property-details.html">Schedule a visit</a>
-            </div>
+  
           </div>
         </div>
         @endforeach

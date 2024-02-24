@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\gambar;
+
 
 class HomeController extends Controller
 {
@@ -23,6 +25,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $gambar = gambar::all();
+        // return view('index' , compact('gambar'));
+        return view('home' , compact('gambar'));
+       
     }
 }
